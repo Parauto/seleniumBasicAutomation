@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[########launching......Chrome]]>
+    </line>
+    <line>
+      <![CDATA[########launching......edge]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-01-18T17:03:28 IST" name="Suite" finished-at="2022-01-18T17:03:44 IST" duration-ms="15859">
+    <groups>
+    </groups>
+    <test started-at="2022-01-18T17:03:28 IST" name="Test" finished-at="2022-01-18T17:03:44 IST" duration-ms="15859">
+      <class name="scripts.DragAndDropTest">
+        <test-method signature="verifrDragAndDrop()[pri:0, instance:scripts.DragAndDropTest@7880cdf3]" started-at="2022-01-18T17:03:37 IST" name="verifrDragAndDrop" finished-at="2022-01-18T17:03:44 IST" duration-ms="7002" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[########launching......edge]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifrDragAndDrop -->
+      </class> <!-- scripts.DragAndDropTest -->
+      <class name="scripts.MultipleWindowTest">
+        <test-method signature="verifyMultipleWindow()[pri:0, instance:scripts.MultipleWindowTest@36c88a32]" started-at="2022-01-18T17:03:28 IST" name="verifyMultipleWindow" finished-at="2022-01-18T17:03:37 IST" duration-ms="8821" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[########launching......Chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMultipleWindow -->
+      </class> <!-- scripts.MultipleWindowTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
