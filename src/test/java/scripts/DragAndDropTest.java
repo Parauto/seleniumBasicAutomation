@@ -13,10 +13,10 @@ import org.testng.annotations.Test;
 
 import reUsable.DriverManager;
 
-public class DragAndDropTest {
-  @Test
-  public void verifrDragAndDrop() {
-	//	  System.out.println(System.getProperty("user.name"));
+public class DragAndDropTest extends BaseTest {
+	@Test
+	public void verifyDragAndDrop() {
+		// System.out.println(System.getProperty("user.name"));
 //		System.out.println(System.getProperty("os.name"));
 //		String userDir = System.getProperty("user.dir");
 //		System.out.println(userDir);
@@ -27,7 +27,10 @@ public class DragAndDropTest {
 //		driver.manage().window().maximize();
 //		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 //	  or 
-		WebDriver driver = DriverManager.getDriver("edge");
+		// WebDriver driver = DriverManager.getDriver("edge"); this one before extend
+		// BaseTest.
+
+		WebDriver driver = this.getDriver();
 		driver.get("https://jqueryui.com/droppable/");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("iframe[class='demo-frame']")));
@@ -36,8 +39,5 @@ public class DragAndDropTest {
 		Actions action = new Actions(driver);
 		action.dragAndDrop(draggableElement, droppableElement).build().perform();
 		DriverManager.tearDown(driver);
-		
-  }
- }
-
-	  
+	}
+}

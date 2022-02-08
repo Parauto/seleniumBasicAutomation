@@ -10,7 +10,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Reporter;
 
 
-
 public  class DriverManager {
 	public static WebDriver getDriver(String browserName) {
 		String userDir = System.getProperty("user.dir");
@@ -45,7 +44,6 @@ public  class DriverManager {
 
 		Reporter.log("########launching......"+browserName, true);
 		return driver;
-
 	}
 	public static void tearDown(WebDriver driver) {
 		driver.quit();

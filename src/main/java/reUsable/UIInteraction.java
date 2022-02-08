@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UIInteraction {
 
-	// typetext - 1
-	// clearText -- 1
+	// type text - 1
+	// clear Text -- 1
 	// clickOn - 1
 	// checkOncheck -- 1
 	// Select -- 3
