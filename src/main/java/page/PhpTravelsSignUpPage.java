@@ -20,7 +20,7 @@ public class PhpTravelsSignUpPage {
 	}
 
 	public void firstname() {
-		 driver.findElement(firstName).sendKeys("parveen");
+		 driver.findElement(firstName).sendKeys("PARVEEN");
 	}
 	public void lstname() {
 	 driver.findElement(lastName).sendKeys("md");
